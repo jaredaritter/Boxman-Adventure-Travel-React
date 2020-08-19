@@ -1,8 +1,6 @@
 # Boxman-Adventure-Travel
-* Static, hard coded page using only HTML, CSS, and minimal JS
-* Skills application of prior learning in real world example
-* Personal thoughts: 
-    * I am quickly seeing the value of templates, libraries, frameworks, and databases when refactoring this project. Even making use of multiline editing tools, having to edit multiple lines of hard coded HTML is frustratingly slow and tedious. This is a valuable lesson in why DRYing tools are used. This is most definitely the hard way.
+
+- Current WIP
+- Rework of static site using React. I understand that static sites are not the best use case for React but it gives me an opportunity to work on creating React components in a templated flow and bringing data in from outside files. A two birds situation if you will.
 
 ## Task list
-* Crop grid pictures
