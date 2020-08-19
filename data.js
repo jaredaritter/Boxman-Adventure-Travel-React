@@ -1,3 +1,33 @@
+const banner = 'Boxman Adventure Travel Co.';
+
+const greeting = [
+  "These travel services have been specially tailored to celebrate Mark Boxman's 70th birthday.",
+  "Suzie and Jared's gift to you is assistance planning and financing the trip of your dreams. All inclusive package details for the trips shown below!",
+];
+
+const services = [
+  {
+    title: 'Best Travel Agents',
+    info:
+      "Seriously. These agents have planned and executed trips around the world. They've seen some things.",
+  },
+  {
+    title: 'Happy Clients',
+    info:
+      'Their customers just keep coming back for more. Suzie, Jared, and Penny have almost never been scared for their lives.',
+  },
+  {
+    title: 'Amazing Tours',
+    info:
+      'We like to keep it personal and we plan trips for our customers like they are family. Prepare for awesome!',
+  },
+  {
+    title: 'Handpicked Accomodations',
+    info:
+      'While Suzie and Jared often requested tents and hostels, we know that you will be looking for a little more comfort and luxury. We got you!',
+  },
+];
+
 const tours = [
   {
     title: 'Family Trip to Maine',
@@ -21,6 +51,12 @@ const tours = [
         alt: 'house with chairs',
       },
     ],
+    card: {
+      href: '#maine',
+      src: './images/maine-flag.webp',
+      alt: 'Maine flag',
+      stars: 5,
+    },
   },
   {
     title: 'Exotic Flyfishing Adventure',
@@ -40,6 +76,12 @@ const tours = [
         alt: 'overhead shot of harbor',
       },
     ],
+    card: {
+      href: '#flyfishing',
+      src: './images/flyfishing-rod.jpg',
+      alt: 'Flyfishing Reel',
+      stars: 5,
+    },
   },
   {
     title: 'Trip to the Homeland',
@@ -63,15 +105,114 @@ const tours = [
         alt: 'israel country',
       },
     ],
+    card: {
+      href: 'israel',
+      src: './images/israel-flag.webp',
+      alt: 'Israel',
+      stars: 5,
+    },
   },
   {
-    title: '',
-    info: [],
-    images: [{}],
+    title: 'New England Nautical Adventure',
+    id: 'nautical',
+    info: [
+      'Our nautical tours offer a splash of saltwater and a breath of fresh air from your very own chartered boat. Whether you want to take it out for a day or a week, we can work it out for you. Coordinating with our very own privately retained captain we can sail up and down the New England coastline or meet him somewhere along the East Coast for a day trip.',
+      'The initial consideration for this trip was to plan a trip to a scenic New England town and plan to cross paths with our captain for a day trip out on the water. The whole family can be included as we settle into a quaint coastal town and take trips out on the water at our pleasure.',
+      'There are a few options here, but the theme is being out on a boat…',
+    ],
+    images: [
+      {
+        src: './images/nautical-sailboat.jpg',
+        alt: 'sailboat',
+      },
+      {
+        src: './images/nautical-kayak.jpg',
+        alt: 'kayak',
+      },
+      {
+        src: './images/nautical-frigate.jpg',
+        alt: 'frigate',
+      },
+    ],
+    card: {
+      href: '#nautical',
+      src: './images/nautical-onboard.jpg',
+      alt: 'Yacht',
+      stars: 5,
+    },
   },
   {
-    title: '',
-    info: [],
-    images: [{}],
+    title: "It's a feast",
+    id: 'feast',
+    info: [
+      'Well this is a bit of an oddball adventure isn’t it? There isn’t a whole lot here other than that I think we needed another picture to make the website work out. That being said, we could do a feast. If hunger is the name of the game, then we at Boxman Adventure Travel Co. have the meal for you.',
+      'You want to become the ultimate grill master? Well we’ll find you a grilling class. You want to bedazzle your wife with newfound wine snobbery? Well we’ll find you a sommelier class. Or maybe you just want a fancy steak dinner? Then we’ll find the best steak in Western NC and spoon feed it to you (literally if need be).',
+      '*Note this option can be combined with other adventures and should not be considered an adventure in itself.',
+    ],
+    images: [
+      {
+        src: './images/feast-steak.jpg',
+        alt: 'steak',
+      },
+      {
+        src: './images/feast-wine.jpg',
+        alt: 'wine',
+      },
+    ],
+    card: {
+      href: '#feast',
+      src: './images/feast-hall.png',
+      alt: 'Viking Feast',
+      stars: 5,
+    },
+  },
+  {
+    title: "Birthday Guy's Choice",
+    id: 'choice',
+    info: [
+      'Don’t like any of these choices? Well then tell us what you want and we’ll plan it. Our specialized services can plan any trip of any duration to any location. We can harness the power of the internet to make the adventure of your dreams come true!',
+    ],
+    images: [
+      {
+        src:
+          'https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Question_mark_%28black%29.svg/1200px-Question_mark_%28black%29.svg.png',
+        alt: 'question mark',
+      },
+      {
+        src:
+          'https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Question_mark_%28black%29.svg/1200px-Question_mark_%28black%29.svg.png',
+        alt: 'question mark',
+      },
+    ],
+    card: {
+      href: '#choice',
+      src: './images/question-mark.png',
+      alt: 'Question Mark',
+      stars: 5,
+    },
   },
 ];
+
+const survey = [
+  'Maine!',
+  'Fly Fishing!',
+  'Israeli!',
+  'Nautical!',
+  'Feast!',
+  'Other!',
+];
+
+const footer = {
+  trademark: {
+    src:
+      'https://www.pngkit.com/png/detail/288-2888122_compass-clipart-blank-dibujo-de-rosa-de-los.png',
+    alt: 'compass rose logo',
+    name: 'Boxman Adventure Travel Co.',
+  },
+  contact: {
+    header: 'Contact Info',
+    address1: '1234 Big Ol Trip Ln',
+    address2: 'Funville, Anywhere 98765',
+    email: 'marks70th@celebrate.you',
+  },
+};
